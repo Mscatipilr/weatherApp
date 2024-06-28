@@ -43,7 +43,9 @@ to get the weather data. make sure to modify the variable names to fit your code
 */
 const apiKey = '3bea7a5d48964a560e31e0af70da7423';
 
-document.getElementById('getWeather').addEventListener('click', () => {
+document.getElementById('getWeather').addEventListener('submit', (event) => {
+    event.preventDefault();
+
     const zipCode = document.getElementById('zipCode').value;
     if (!zipCode) {
       alert('Please enter a zip code');
