@@ -83,12 +83,13 @@ document.getElementById('getWeather').addEventListener('submit', (event) => {
     weatherContainer.innerHTML = `
       <div class="card">
         <div class="card-body">
-          <h5 class="card-title">${currentDate}</h5>
-          <p class="card-text">City: ${city}</p>
-          <p class="card-text">Temperature: ${temperature} °F</p>
-          <p class="card-text">Conditions: ${conditions}</p>
-          <p class="card-text">High: ${tempHigh} °F</p>
-          <p class="card-text">Low: ${tempLow} °F</p>
+          <p class="card-text"><small>${currentDate}</small></p>
+          <p><em>Today in
+            <br><strong><span class="h4">${city}</span></strong></em></p>
+          <p class="card-text">The temperature is <strong>${temperature} °F</strong>
+            <br>and you'll experience <strong>${conditions}.</strong></p>
+          <p class="card-text">High/Low
+            <br><strong>${tempHigh} °F/${tempLow} °F</strong></p>
         </div>
       </div>
     `;
