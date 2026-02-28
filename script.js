@@ -41,7 +41,7 @@ use http://api.openweathermap.org/geo/1.0/zip?zip=${zipCode},US&appid=${apiKey} 
 https://api.openweathermap.org/data/2.5/weaher?lat=${latitude}&lon=${longitude}&appid=${apiKey} 
 to get the weather data. make sure to modify the variable names to fit your code
 */
-const apiKey = '3bea7a5d48964a560e31e0af70da7423';
+const apiKey = '0';//add apiKey here
 
 document.getElementById('getWeather').addEventListener('submit', (event) => {
     event.preventDefault();
